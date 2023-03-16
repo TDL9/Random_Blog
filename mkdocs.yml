@@ -1,5 +1,5 @@
 site_name: Random Blog
-site_url: https://example.com/
+site_url: https://tdl9.github.io/Random_Blog/
 nav:
     - Home: index.md
     - Test: test.md
