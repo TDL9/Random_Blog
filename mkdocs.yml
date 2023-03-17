@@ -2,27 +2,35 @@ site_name: Random Blog
 site_url: https://tdl9.github.io/Random_Blog/
 nav:
     - Home: index.md
-    - Test: test.md
-    - Random Blog: about.md
+    - Blog:
+      - blog/blog.md
+      - Language:
+        - blog/lang/lang.md
+        - Yaml: blog/lang/yaml.md
+    - Fragment: fragment/fragment.md
+    - Meta:
+      - meta/meta.md
+      - Test:
+        - meta/test.md
+        - also test: meta/test.md
 
-
+plugins:
+    - section-index
+    - search
 
 theme:
   name: material
   features:
     - content.code.copy
     - content.code.select
+    - navigation.tabs
+    - navigation.tabs.sticky
   palette:
-
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: deep purple
+      accent: pink
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -30,9 +38,11 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: deep orange
+      accent: yellow
       toggle:
         icon: material/brightness-4
-        name: Switch to system preference
+        name: Switch to light mode
 
 markdown_extensions:
   - admonition
