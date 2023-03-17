@@ -2,17 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://tdl9.github.io/Random_Blog/</loc>
-         <lastmod>2023-03-16</lastmod>
+         <lastmod>2023-03-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tdl9.github.io/Random_Blog/about/</loc>
-         <lastmod>2023-03-16</lastmod>
+         <loc>https://tdl9.github.io/Random_Blog/blog/blog/</loc>
+         <lastmod>2023-03-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tdl9.github.io/Random_Blog/test/</loc>
-         <lastmod>2023-03-16</lastmod>
+         <loc>https://tdl9.github.io/Random_Blog/blog/lang/lang/</loc>
+         <lastmod>2023-03-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tdl9.github.io/Random_Blog/blog/lang/yaml/</loc>
+         <lastmod>2023-03-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tdl9.github.io/Random_Blog/fragment/fragment/</loc>
+         <lastmod>2023-03-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tdl9.github.io/Random_Blog/meta/meta/</loc>
+         <lastmod>2023-03-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tdl9.github.io/Random_Blog/meta/test/</loc>
+         <lastmod>2023-03-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
