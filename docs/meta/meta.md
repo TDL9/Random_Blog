@@ -1,11 +1,12 @@
 ## Random Blog
 
-Just a random blog, but I hope to write something helpful and meaningful.
+只是一个随意的博客，但我希望未来能写一点有用的东西，并且只写有用的东西。
 
 ## Tech
 
-Built with [Mkdocs](https://www.mkdocs.org)
-and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material).
+- 语法 Markdown
+- 构建 [Mkdocs](https://www.mkdocs.org)
+	- 和 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material).
 
 ### Mkdocs
 

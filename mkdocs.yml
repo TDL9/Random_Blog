@@ -6,6 +6,7 @@ nav:
       - blog/blog.md
       - Language:
         - blog/lang/lang.md
+        - Json: blog/lang/json.md
         - Yaml: blog/lang/yaml.md
     - Fragment: fragment/fragment.md
     - Meta:
@@ -38,7 +39,7 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep orange
+      primary: indigo
       accent: yellow
       toggle:
         icon: material/brightness-4

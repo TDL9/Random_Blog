@@ -24,7 +24,7 @@ def f(n):
 print(f(3))
 ```
 
-```rkt
+```rkt title="Racket code"
 (define (f x)
     (if (x > 1)
         (* x (f (- x 1)))
@@ -37,5 +37,28 @@ print(f(3))
     123
     
     123
+
+???+ note "collapsible"
+    here
     
-## Test for 
+??? info inline end "Lorem ipsum"
+
+    Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Nulla et euismod nulla.
+    Curabitur feugiat, tortor non consequat
+    finibus, justo purus auctor massa, nec
+    semper lorem quam in massa.
+!!! info inline end "Lorem ipsum"
+
+    Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Nulla et euismod nulla.
+    Curabitur feugiat, tortor non consequat
+    finibus, justo purus auctor massa, nec
+    semper lorem quam in massa.
+1
+
+## Test for links
+
+[home page](../index.md)
+
+[Yaml](../blog/lang/yaml.md)
