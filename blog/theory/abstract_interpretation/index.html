@@ -8,16 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://tdl9.github.io/Random_Blog/blog/theory/logic/">
+        <link rel="canonical" href="https://tdl9.github.io/Random_Blog/blog/theory/abstract_interpretation/">
       
       
+        <link rel="prev" href="../math_basics/">
+      
+      
+        <link rel="next" href="../abstract_algebra/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
     
     
       
-        <title>Logic - Random Blog</title>
+        <title>Abstract Interpretation - Random Blog</title>
       
     
     
@@ -68,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#abstract-interpretation-nyu-csci-ga3140-001-spring-2023" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -99,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Logic
+              Abstract Interpretation
             
           </span>
         </div>
@@ -185,10 +194,12 @@
         
   
   
+    
+  
 
 
   <li class="md-tabs__item">
-    <a href="../../blog/" class="md-tabs__link">
+    <a href="../../blog/" class="md-tabs__link md-tabs__link--active">
       Blog
     </a>
   </li>
@@ -277,14 +288,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
       
@@ -299,7 +312,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Blog
@@ -378,14 +391,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
       
       
       
@@ -394,7 +409,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2_2">
           <span class="md-nav__icon md-icon"></span>
           Theory
@@ -419,11 +434,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../abstract_interpretation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Abstract Interpretation
       </a>
+      
     </li>
   
 
@@ -691,6 +716,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -705,9 +732,355 @@
                   
 
 
-  <h1>Logic</h1>
-
-
+<h1 id="abstract-interpretation-nyu-csci-ga3140-001-spring-2023">Abstract Interpretation @ NYU CSCI-GA.3140-001 Spring 2023</h1>
+<ul>
+<li>教授：Patrick Cousot</li>
+<li>教材：Cousot, Patrick. <em>Principles of Abstract Interpretation</em>, MIT Press, 2021. <em>ProQuest Ebook Central</em>, http://ebookcentral.proquest.com/lib/nyulibrary-ebooks/detail.action?docID=6715808.  </li>
+<li>网页：https://cs.nyu.edu/~pcousot/courses/spring23/CSCI-GA.3140-001/slides/index.shtml</li>
+<li>https://github.com/PrAbsInt</li>
+</ul>
+<h1 id="_1">读教材笔记</h1>
+<h2 id="chap2">Chap2</h2>
+<p>For those interested only in the use of such static analyzers, Introduction to Static Analysis by Xavier Rival and Kwangkeun Yi [837] is a good reference.  </p>
+<p>Over time, the fundamental ideas of abstract interpretation have found a wide range of applications, often unexpected, such as, the formalization of Boolean satisfiability (SAT) and satisfiability modulo theories (SMT) solvers [274, 284]; fuzz testing [851]; robustness and fairness of neural networks [893, 941]; biological networks [140]; and so on. This book provides all the foundations to understand these applications in depth.  </p>
+<p>duality of logic : Exercise 2.5</p>
+<p>Remark 2.7</p>
+<p>A set S equipped with a partial order &lt;= is called a poset \&lt;S, &lt;=></p>
+<p>It may be that the returned value of a function always belong to a set that depends upon one of its parameters (this is called a dependent type in computer science [166]).</p>
+<p>before 2.2.5: A pointwise definition of a function?</p>
+<p>Readers may enjoy studying more advanced introduction to abstract set theory, such as [706]</p>
+<h2 id="chap3">Chap3</h2>
+<p>Structural definitions are the basis of denotational semantics, introduced by Dana Scott and Christopher Strachey [872] (and called compositional in this context).  </p>
+<p>The idea of collecting semantics was introduced in [235] (under the <em>qualifier static semantics</em> ) as a basis for proving the soundness of static analyses. The concept of collecting semantics is further developed in chapter 8.  </p>
+<h2 id="chap15">Chap15</h2>
+<p>Slides-10--15--fixpoints-AI.pdf p17 property</p>
+<p>Slide 11 p27
+Slide 12 10-19
+Slide 16 An overview of set-theoretic formal definitions is given in [Aczel, 1977].</p>
+<p>Theorem (18.10,</p>
+<p>Slide 18 p28-32</p>
+<p>Slide 19 p28
+Slide 19 p29 Not mechanizable, even if the loop invariant is given (Rice theorem)
+Slide 20 Proof
+Slide 21 P24</p>
+<h1 id="_2">勘误</h1>
+<p>?book pointwise function
+slide04-p11 exists -&gt; exit</p>
+<h1 id="_3">大纲</h1>
+<p>首先我们定义一个极简的指令式语言（imperative programming language）
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>A ::= 1 | x | y | ... | z | A1 - A2
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>B ::= A1 &lt; A2 | B1 nand B2
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>E ::= A | B
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>S ::= x = E
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    | ;
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    | if (B) S
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    | if (B) S else S
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    | while (B) S
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    | break ;
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    | { Sl }
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>Sl ::= Sl S | ɛ
+</span></code></pre></div>
+非严格地，这是 C 语言的一个子集，即语句可以按照 C 来理解。</p>
+<p>省略了括号？todo
+代码运行的局部性</p>
+<p>The description of syntax by grammar dates back to Noam Chomsky [180]. P28</p>
+<p>一个性质（Property）用一个集合 <span class="arithmatex">\(P\)</span> 表示，在集合里的满足性质，蕴含（imply）关系即集合的包含关系 <span class="arithmatex">\(P \subseteq Q\)</span></p>
+<h1 id="notion">符号 Notion</h1>
+<h2 id="basic">基础 Basic</h2>
+<p><span class="arithmatex">\(\mathbb{N, N^+, Z, R}\)</span></p>
+<p><span class="arithmatex">\(\mathbb{B}\)</span> = Bool : tt, ff</p>
+<p>“定义为” = "<span class="arithmatex">\(\triangleq\)</span>"</p>
+<h2 id="set">集合 Set</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Type</th>
+<th align="left">Description</th>
+<th>Example</th>
+<th>tex</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\varnothing\)</span></td>
+<td></td>
+<td align="left"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>℘, <span class="arithmatex">\(\wp(S)\)</span></td>
+<td>Set-&gt;Set(Set)</td>
+<td align="left">[Weierstrass] powerset, <span class="arithmatex">\(\wp(S)=\{S'\mid S'\subseteq S\}\)</span></td>
+<td></td>
+<td>\wp</td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\wp_f(S)\)</span></td>
+<td></td>
+<td align="left">finite powerset (all finite subsets)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\neg\)</span></td>
+<td></td>
+<td align="left"></td>
+<td></td>
+<td>\neg</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="structures-and-maps">结构与映射 Structures and maps</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Type</th>
+<th align="left">Description</th>
+<th>Example</th>
+<th>tex</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\alpha\)</span></td>
+<td>Any-&gt;Any</td>
+<td align="left">抽象化，abstraction</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\gamma\)</span></td>
+<td>Any-&gt;Any</td>
+<td align="left">具象化，concretization</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\mathcal{S}\)</span></td>
+<td>Any-&gt;Label-&gt;Any</td>
+<td align="left">语义，semantic</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\mathbb{R}\)</span></td>
+<td></td>
+<td align="left"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>poset</td>
+<td>=\&lt;Set, PartialOrder></td>
+<td align="left">A set <span class="arithmatex">\(S\)</span> equipped with a partial order <span class="arithmatex">\(\leq\)</span> is called a poset <span class="arithmatex">\(\left&lt;S, \leq\right&gt;\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\nrightarrow\)</span></td>
+<td></td>
+<td align="left">partial function</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\twoheadrightarrow\)</span></td>
+<td></td>
+<td align="left">满射，surjective</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\rightarrowtail\)</span></td>
+<td></td>
+<td align="left">单射，injective</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>⤖</td>
+<td></td>
+<td align="left">双射，bijective</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="program">程序 Program</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Type</th>
+<th align="left">Description</th>
+<th>Example</th>
+<th>tex</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>italic <span class="arithmatex">\(\mathbb{V}\)</span></td>
+<td></td>
+<td align="left">变量，variable</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>italic <span class="arithmatex">\(\mathbb{A}\)</span></td>
+<td></td>
+<td align="left">算术表达式，arithmetic exp</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>italic <span class="arithmatex">\(\mathbb{B}\)</span></td>
+<td></td>
+<td align="left">布尔表达式，boolean exp</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>italic <span class="arithmatex">\(\mathbb{E}\)</span></td>
+<td></td>
+<td align="left">表达式，expression</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Type</th>
+<th align="left">Description</th>
+<th>Example</th>
+<th>tex</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\rho\)</span></td>
+<td>Var-&gt;Int</td>
+<td align="left">一个环境</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\mathbb{Ev}\)</span></td>
+<td>Type1</td>
+<td align="left">=Var-&gt;Int</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="left"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\mathscr{A}\)</span></td>
+<td>ArithExp-&gt;Ev-&gt;Int</td>
+<td align="left"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\mathscr{B}\)</span></td>
+<td>BoolExp-&gt;Ev-&gt;Bool</td>
+<td align="left"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\mathcal{S}\)</span></td>
+<td>Exp-&gt;Ev-&gt;(Int|Bool)</td>
+<td align="left"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td align="left"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>semantic property <span class="arithmatex">\(P\)</span></td>
+<td>Set(Ev-&gt;(Int|Bool))</td>
+<td align="left"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\mathcal{S}\)</span></td>
+<td>Exp-&gt;Ev-&gt;(Int|Bool)</td>
+<td align="left"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="abstraction">Abstraction</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Type</th>
+<th align="left">Description</th>
+<th>Example</th>
+<th>tex</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the hat of <span class="arithmatex">\(\widehat{S}\)</span></td>
+<td></td>
+<td align="left"></td>
+<td>Structural</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
 

@@ -2,157 +2,182 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://tdl9.github.io/Random_Blog/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/todo/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/blog/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/glossary/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/lang/c%2B%2B/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/lang/einstein%20notation/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/lang/json/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/lang/lang/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/lang/lisp/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/lang/markdown/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/lang/python/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/lang/racket/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/lang/yaml/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tdl9.github.io/Random_Blog/blog/theory/abstract%20interpretation/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <loc>https://tdl9.github.io/Random_Blog/blog/theory/abstract_algebra/</loc>
+         <lastmod>2023-04-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tdl9.github.io/Random_Blog/blog/theory/abstract_interpretation/</loc>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/theory/computation/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/theory/linear%20algebra/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/theory/lisp/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/theory/logic/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tdl9.github.io/Random_Blog/blog/theory/math_basics/</loc>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/theory/real%20analysis/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/theory/type%20theory/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tdl9.github.io/Random_Blog/blog/tool/tool/</loc>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/tool/app/app/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tdl9.github.io/Random_Blog/blog/tool/app/vulkan/</loc>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/tool/ide/emacs/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/tool/ide/vim/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/tool/os/guix/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/blog/tool/os/os/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/fragment/fragment/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tdl9.github.io/Random_Blog/fragment/math%20problems/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <loc>https://tdl9.github.io/Random_Blog/fragment/math_problems/</loc>
+         <lastmod>2023-04-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tdl9.github.io/Random_Blog/fragment/ray_tracing_weekend/</loc>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/meta/meta/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/meta/test/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/review/paper/cross/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tdl9.github.io/Random_Blog/review/paper/rl/</loc>
-         <lastmod>2023-03-31</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
