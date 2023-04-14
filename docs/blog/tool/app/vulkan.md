@@ -1,0 +1,1 @@
+Vulkan is designed as a cross-platform abstraction over [GPUs](https://en.wikipedia.org/wiki/Graphics_processing_unit)

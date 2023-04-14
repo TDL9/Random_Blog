@@ -8,7 +8,17 @@ nav:
         - blog/lang/lang.md
         - Json: blog/lang/json.md
         - Yaml: blog/lang/yaml.md
-    - Fragment: fragment/fragment.md
+      - Theory:
+        - Basic: blog/theory/math_basics.md
+        - Abstract Interpretation: blog/theory/abstract_interpretation.md
+        - Abstract Algebra: blog/theory/abstract_algebra.md
+      - Tool:
+        - blog/tool/tool.md
+        - vulkan: blog/tool/app/vulkan.md
+    - Fragment:
+      - fragment/fragment.md
+      - 数学问题: fragment/math_problems.md
+      - 迷你光线追踪: fragment/ray_tracing_weekend.md
     - Meta:
       - meta/meta.md
       - Test:
